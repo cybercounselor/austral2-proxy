@@ -13,15 +13,14 @@ app.use((req, res, next) => {
 });
 
 const LIBRARY = `
-EMPUJE HORIZONTAL: Pushup Con Kettlebell, Pushup Con Inestabilidad, Empuje Con Banda Elástica, Flexiones abertura neutra, Flexiones abertura amplia, Flexiones con rodillas apoyadas, Flexiones inclinadas, Flexiones declinadas, Flexiones explosivas, Flexiones con aplauso, Flexiones Superman, Flexiones diamante, Flexiones espartanas, Flexiones hindúes, Flexiones Spiderman, Flexiones arqueras, Flexiones a una mano, Pseudo push ups, Flexiones con resistencia, Flexiones rusas, Empuje Con Banda De Suspension
+EMPUJE HORIZONTAL: Pushup Con Kettlebell, Pushup Con Inestabilidad, Flexiones abertura neutra, Flexiones abertura amplia, Flexiones con rodillas apoyadas, Flexiones inclinadas, Flexiones declinadas, Flexiones explosivas, Flexiones diamante, Flexiones espartanas, Flexiones hindúes, Flexiones Spiderman, Flexiones arqueras, Flexiones a una mano, Pseudo push ups
 EMPUJE VERTICAL: Pike push ups, Pike push ups con elevación, Flexiones de pino, Press Militar Con Banda Elastica
-FONDOS: Fondos en paralelas, Fondos negativos en paralelas, Fondos con banda, Fondos explosivos en paralelas, Fondos en banco, Bar dips, Muscle up con salto
-TRACCIÓN HORIZONTAL: Remo Unilateral Con Banda, Remo Con Banda Elástica, Remo en L, Australian pull ups prono, Remo invertido en barra, Australian pull ups supino
-TRACCIÓN VERTICAL: Dominadas abertura neutra, Dominadas abertura amplia, Dominadas en supinación, Dominadas con salto, Dominadas negativas, Dominadas asistidas, Dominadas explosivas, High pull ups, Dominadas arqueras, Dominadas escapulares, Muscle up, Muscle up con asistencia
-TREN INFERIOR RODILLA: Sentadilla, Sentadilla asistida, Sentadilla con apoyo en banco, Sentadilla con salto, Sentadilla búlgara, Pistol squat, Pistol squat en banco, Pistol squat asistida, Estocadas, Estocadas con desplazamiento, Estocadas con salto, Subida al banco a una pierna, Sentadilla isométrica, Gemelos con déficit
-TREN INFERIOR CADERA: Hip thrust, Hip thrust a una pierna, Puente de glúteo, Puente de glúteo isométrico, Puente de glúteo a una pierna, Frog pump, Peso muerto con banda, Peso muerto a una pierna, Hiperextensión en banco, Patada de glúteo, Abduccion Con Banda Elastica
-CORE: Burpees, Plancha Abdominal, Plancha con rodillas apoyadas, Plancha Dinámica Alternada, Plancha Con Extension De Brazo, Plancha Con Elevacion De Pierna, Deadbug, Hollow Plank, Caminata Abdominal, Rueda Abdominal, Crunch Abdominal, Crunch Cruzado, Escalador, Escalador Oblicuos, Rotación Con Banda, Pallof Press, Caminata del Granjero, Tijeras
-QIGONG/KUNG FU (OBLIGATORIO 1 por día): Mabu, Zhan Zhuang, Ba Duan Jin 1-Dos Manos Sostienen el Cielo, Ba Duan Jin 2-Tensar el Arco, Ba Duan Jin 3-Separar Cielo y Tierra, Ba Duan Jin 4-Mirar hacia Atrás, Ba Duan Jin 5-Sacudir Cabeza y Cola, Ba Duan Jin 6-Tocar los Pies, Ba Duan Jin 7-Puños con Ojos Furiosos, Ba Duan Jin 8-Sacudir el Cuerpo, Gong Bu, Xing Bu
+FONDOS: Fondos en paralelas, Fondos negativos, Fondos con banda, Fondos explosivos, Fondos en banco, Bar dips, Muscle up con salto
+TRACCIÓN HORIZONTAL: Remo Con Banda, Remo en L, Australian pull ups prono, Remo invertido en barra, Australian pull ups supino
+TRACCIÓN VERTICAL: Dominadas abertura neutra, Dominadas abertura amplia, Dominadas en supinación, Dominadas con salto, Dominadas negativas, Dominadas asistidas, Dominadas explosivas, High pull ups, Muscle up
+TREN INFERIOR: Sentadilla, Sentadilla asistida, Sentadilla con salto, Sentadilla búlgara, Pistol squat, Pistol squat en banco, Estocadas, Estocadas con desplazamiento, Subida al banco a una pierna, Gemelos con déficit, Hip thrust, Puente de glúteo, Peso muerto a una pierna, Frog pump
+CORE: Burpees, Plancha Abdominal, Plancha Dinámica, Deadbug, Hollow Plank, Rueda Abdominal, Crunch Abdominal, Escalador, Pallof Press, Caminata del Granjero
+QIGONG/KUNG FU (OBLIGATORIO 1 por día, variarlo): Mabu, Zhan Zhuang, Ba Duan Jin 1-Dos Manos Sostienen el Cielo, Ba Duan Jin 2-Tensar el Arco, Ba Duan Jin 3-Separar Cielo y Tierra, Ba Duan Jin 4-Mirar hacia Atrás, Ba Duan Jin 5- En Mabu hacer círculos con la cabeza, Ba Duan Jin 6-Tocar los Pies, Ba Duan Jin 7-Puños con Yi enfocada, Ba Duan Jin 8-Sacudir el Cuerpo, SanTiShi La postura de 3 cuerpos, JinJiDuLi, La Sao
 `;
 
 app.post("/proxy", async (req, res) => {
