@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json({ limit: "10mb" }));
 
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Origin", "https://calistenia.australkungfu.com/");
   res.header("Access-Control-Allow-Methods", "POST, OPTIONS");
   res.header("Access-Control-Allow-Headers", "Content-Type");
   if (req.method === "OPTIONS") return res.sendStatus(200);
