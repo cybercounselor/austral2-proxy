@@ -32,7 +32,7 @@ app.post("/proxy", async (req, res) => {
     const datosAtleta = atletaMatch ? atletaMatch[1].trim() : "";
     const evaluacion = evalMatch ? evalMatch[1].trim() : "";
 
-    const prompt = `Eres entrenador experto en calistenia de la academia Austral Kung Fu (artes marciales chinas y Tai Chi Chuan).
+    const prompt = `Eres entrenador experto en calistenia marcial de la academia Austral Kung Fu (artes marciales chinas y Tai Chi Chuan).
 
 DATOS DEL ATLETA:
 ${datosAtleta}
